@@ -1,0 +1,33 @@
+.site-hero{
+  position: relative;
+  height: 100vh;
+  background-image: url('../images/backgrounds/hero-background.jpg');
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-content{
+    h1{
+      margin-bottom: 75px;
+    }
+    &-buttons{
+      margin: 0;
+      padding: 0;
+      li{
+        display: inline-block;
+        &:not(:last-child){
+          margin-right: 30px;
+        }
+        .btn{
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  &-scroll{
+    position: absolute;
+    left: 50%; bottom: 70px;
+    transform: translateX(-50%);
+  }
+}

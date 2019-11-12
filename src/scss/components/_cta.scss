@@ -1,0 +1,22 @@
+.site-cta{
+  padding: 130px 0;
+  background-image: url('../images/backgrounds/cta-background.jpg');
+  background-size: cover;
+  background-position: center center;
+  &-title{
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin-bottom: 60px;
+  }
+  &-buttons{
+    margin: 0;
+    padding: 0;
+    li{
+      display: inline-block;
+      &:not(:last-child){
+        margin-right: 40px;
+      }
+    }
+  }
+}

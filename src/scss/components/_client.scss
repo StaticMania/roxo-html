@@ -1,0 +1,15 @@
+.site-client{
+  padding: 100px 0 50px;
+  .section-title{
+    margin-bottom: 100px;
+  }
+  &-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-item{
+    text-align: center;
+    width: 20%;
+    margin-bottom: 50px;
+  }
+}

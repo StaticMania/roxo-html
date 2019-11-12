@@ -1,0 +1,19 @@
+.site-contact{
+  padding: 150px 0 100px;
+  background: $gray;
+  &-title{
+    font-weight: 700;
+    span{
+      color: $primary-color;
+    }
+  }
+  &-form{
+    margin-top: 20px;
+    h4{
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+      letter-spacing: 3px;
+    }
+  }
+}

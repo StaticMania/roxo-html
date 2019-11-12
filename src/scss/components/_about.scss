@@ -1,0 +1,32 @@
+.site-about{
+  &-header{
+    padding-top: 80px;
+    background-color: $gray;
+  }
+  &-wrapper{
+    display: flex;
+    align-items: center;
+  }
+  &-company{
+    background: $primary-color;
+    width: 40%;
+    padding: 70px 38px;
+    h1{
+      color: $white;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 60px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+  &-description{
+    width: 60%;
+    padding-left: 50px;
+    p{
+      font-size: 25px;
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+  }
+}
