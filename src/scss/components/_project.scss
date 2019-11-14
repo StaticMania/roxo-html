@@ -1,5 +1,6 @@
 .site-project{
   padding: 120px 0;
+  overflow: hidden;
   &-item{
     position: relative;
     margin-bottom: 30px;
@@ -16,6 +17,10 @@
       padding: 45px 50px;
       bottom: 0;
       transition: all .3s $site-ease;
+      @include tablet{
+        padding: 30px;
+        padding-bottom: 75px;
+      }
       span{
         font-family: $secondary-font;
         color: $primary-color;
@@ -34,6 +39,10 @@
         opacity: 0;
         transform: translateY(20px);
         transition: all 0.3s $site-ease;
+        @include tablet{
+          transform: translateY(0);
+          opacity: 1;
+        }
       }
     }
     &:hover{
@@ -78,12 +87,22 @@
   &-header{
     padding: 170px 0 100px;
     background: $gray;
+    @include tablet{
+      padding: 120px 0 80px;
+    }
     &-content{
       h1{
         font-size: 55px;
         span{
           color: $primary-color;
         }
+        @include tablet{
+          font-size: 40px;
+        }
+      }
+      @include desktop{
+        text-align: center;
+        margin-bottom: 30px;
       }
     }
     &-action{
@@ -95,9 +114,15 @@
         font-weight: 300;
         color: $text-color-dark;
         margin-bottom: 20px;
+        @include tablet{
+          font-size: 25px;
+        }
       }
       img{
         width: 66px;
+        @include tablet{
+          width: 40px;
+        }
       }
       &:hover{
         text-decoration: none;
@@ -132,6 +157,9 @@
   &-single{
     &-section{
       padding: 250px 0 100px;
+      @include tablet{
+        padding: 100px 0;
+      }
     }
     h1{
       font-size: 40px;
@@ -140,11 +168,15 @@
     }
     &-image{
       display: flex;
+      flex-wrap: wrap;
       margin-bottom: 30px;
       img{
         width: 48%;
         &:nth-child(2n){
           margin-left: auto;
+        }
+        @include tablet{
+          width: 100%;
         }
       }
     }
@@ -163,6 +195,9 @@
         display: flex;
         margin-left: auto;
         justify-content: flex-end;
+        @include mobile{
+          transform: translateX(-10px);
+        }
         .link-area{
           display: inline-block;
           overflow: hidden;

@@ -7,6 +7,9 @@
   &:focus{
     box-shadow: none;
   }
+  @include desktop{
+    padding: 17px 40px;
+  }
   .btn-area{
     display: block;
     overflow: hidden;
@@ -28,6 +31,16 @@
     }
   }
   &:hover{
+    .btn-area{
+      span{
+        transform: translateY(-150%) skewY(7deg);
+        &::after{
+          transform: skewY(-7deg);
+        }
+      }
+    }
+  }
+  &:visited{
     .btn-area{
       span{
         transform: translateY(-150%) skewY(7deg);

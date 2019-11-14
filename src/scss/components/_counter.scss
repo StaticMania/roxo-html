@@ -5,7 +5,14 @@
   .section-title{
     margin-bottom: 40px;
   }
+  @include mobile{
+    padding: 50px 0;
+  }
   &-item{
+    @include desktop{
+      margin-bottom: 30px;
+      text-align: center;
+    }
     &-title{
       font-size: 20px;
       font-weight: 300;
