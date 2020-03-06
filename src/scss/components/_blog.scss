@@ -48,6 +48,15 @@
         }
         h3{
           margin-bottom: 15px;
+          a{
+            letter-spacing: 0;
+            color: $text-color-dark;
+            transition: 0.3s ease;
+            &:hover{
+              color: $primary-color;
+              text-decoration: none;
+            }
+          }
           @include mobile{
             font-size: 20px;
           }
