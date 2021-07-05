@@ -34,6 +34,9 @@
       transition: all .3s ease;
       padding: 15px 18px;
       position: relative;
+      &:hover{
+        color: $primary-color;
+      }
     }
     &:last-child{
       margin-left: 15px;
