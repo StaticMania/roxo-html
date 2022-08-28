@@ -1,5 +1,8 @@
 $(document).ready(function() {
   "use strict";
+  //Copyright Year
+  var copyrightYear = document.getElementById('copyrightYear');
+  copyrightYear.innerHTML = new Date().getFullYear();
   // Scroll to top
   $("a[href='#top']").click(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
